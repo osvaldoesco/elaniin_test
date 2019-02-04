@@ -1,0 +1,187 @@
+/* END Style for about page
+
+font-family: 'Merriweather', serif;
+font-family: 'Poppins', sans-serif;
+*/
+$poppins: 'Poppins', sans-serif;
+$merri: 'Merriweather', serif;
+body {
+	color: white;
+	background-color: #111111;
+}
+
+.home-container{
+	width: 100%;
+	height: 300px;
+	background-color: green;
+}
+
+/* Style for about page */
+
+.about-container{
+	width: 100%;
+	min-height: 300px;
+}
+
+.about-header {
+	text-align: center;
+	padding: 100px 0px;
+	img{
+		width: 50px;
+	}
+	h3 {
+		padding: 30px;
+		font-family: 'Merriweather', serif;
+		font-size: 32px;
+		font-weight: 300;
+		font-style: italic;
+		line-height: 60px;
+		letter-spacing: 2.88px;
+		width: 600px;
+		margin: 0 auto;
+	}
+}
+
+.vertical-line{
+	width: 1px;
+	height: 140px;
+	background-color: #ffffff;
+	margin: 0 auto;
+}
+
+.about-photos-container{
+	padding: 40px;
+}
+
+.single-history{
+	padding-bottom: 120px;
+}
+
+/* About Photos */
+
+.about-photos-container__photo{
+	position: relative;
+	padding-bottom: 65px;
+	&--right{
+		@extend .about-photos-container__photo;
+		text-align: right;
+	}
+	.number{
+		position: absolute;
+		font-family: 'Poppins', sans-serif;
+		font-size: 90px;
+		font-weight: bold;
+		margin-top: -60px;
+		margin-left: -40px;
+		z-index: 2;
+		&--right{
+			@extend .number;
+			margin-top: -60px;
+			right: -40px;
+		}
+	}
+	.photo{
+		position: relative;
+		z-index: 1;
+	}
+	.photo-decoration{
+		position: absolute;
+		bottom: 0px;
+		right: -45px;
+		z-index: 0;
+		&--oposite{
+			@extend .photo-decoration;
+			left: -45px;
+		}
+	}
+}
+
+.about-photos-container__caption{
+	padding-left: 50px;
+	padding-top: 20px;
+	.date{
+		font-family: $poppins;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 60px;
+		margin-bottom: 0px;
+	}
+	.photo_title{
+		font-family: $merri;
+		font-size: 48px;
+		font-weight: 400;
+		line-height: 68px;
+	}
+	.description-decoration{
+		display: flex;
+		margin-top: 20px;
+		p{
+			width: calc(100% - 80px);
+			padding-left: 30px;
+			padding-right: 30px;
+			line-height: 1.9;
+		}
+	}
+	.decoration{
+		width: 80px;
+		background-color: white;
+		height: 1px;
+		margin-top: 10px;
+		margin-left: -55px;
+	}
+}
+/* text content */
+
+.about-text-container{
+	padding: 40px 0px;;
+	.text-item{
+		h4{
+			font-family: 'Merriweather';
+			font-size: 25px;
+			font-weight: 700;
+			line-height: 48px;
+			position: relative;
+			padding-bottom: 10px;
+			&:after{
+				content: "";
+				background-color: #fff;
+				width: 40px;
+				height: 1px;
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+			}
+		}
+	}
+}
+
+.text-caption{
+	margin-top: 20px;
+	label{
+		color: #fff;
+		font-family: Poppins;
+		font-size: 14px;
+		line-height: 1.4;
+		font-weight: bold;
+		margin-top: 10px;
+	}
+	p{
+		color: #969696;
+		font-family: Poppins;
+		font-size: 14px;
+	}
+}
+
+/* END Style for about page */
+
+
+.contact-container{
+	width: 100%;
+	height: 300px;
+	background-color: blue;
+}
+.error404-container{
+	width: 100%;
+	height: 300px;
+	background-color: red;
+}

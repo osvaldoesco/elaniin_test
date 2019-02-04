@@ -1,0 +1,35 @@
+body {
+	color: white;
+	background-color: #111111;
+}
+
+.home-navbar{
+  color: white;
+  padding: 20px 15px !important;
+  .navbar-nav .nav-link{
+    color: white !important;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #fefefe;
+    padding: 0px 25px !important;
+  }
+  .nav-active{
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      margin-left: -10px;
+      margin-top: -10px;
+      width: 40px;
+      height: 25px;
+      background-color: #5328fe;
+      z-index: 0;
+    }
+    span{
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
