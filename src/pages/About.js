@@ -53,8 +53,34 @@ class About extends Component {
                 </div>
                 </Col>
               </Row>
+              <Row className="single-history d-block d-md-none">
+                <Col md="5">
+                  <div className="about-photos-container__photo">
+                    <label className="number">
+                      02.
+                    </label>
+                    <img alt="phot" src="placeholder.jpg" className="photo" />
+                    <img alt="phot-decoration" src="photo_decoration.png" className="photo-decoration" />
 
-              <Row className="single-history">
+                  </div>
+                </Col>
+                <Col md="7">
+                  <div className="about-photos-container__caption">
+                    <label className="date">2016 year</label>
+                    <h3 className="photo_title">Opening of the office.</h3>
+                    <div className="description-decoration">
+                      <div className="decoration"> </div>
+                      <p>
+                        More than the design process itself, I am interested in inventions, engineering and marketing
+                        ... I think that a good designer is someone who manages to unite all the elements:
+                        the understanding of materials and the belief in increasing functionality. Then the
+                        reduction to the form, if you like, becomes the result of all these experiments ...
+                      </p>
+                    </div>
+                </div>
+                </Col>
+              </Row>
+              <Row className="single-history d-none d-md-block">
                 <Col md="7">
                   <div className="about-photos-container__caption">
                     <label className="date">2016 year</label>
@@ -116,7 +142,7 @@ class About extends Component {
           <div className="about-text-container">
             <Container>
               <Row>
-                <Col xs="12" sm="6" md="4">
+                <Col xs={{ size: 10, offset: 1 }} sm={{ size: 8, offset: 2 }}  md="4">
                   <div className="text-item">
                     <h4>Experience.</h4>
                     <div className="text-caption">
@@ -128,7 +154,7 @@ class About extends Component {
 
                   </div>
                 </Col>
-                <Col xs="12" sm="6" md="4">
+                <Col xs={{ size: 10, offset: 1 }} sm={{ size: 8, offset: 2 }} md="4">
                   <div className="text-item">
                     <h4>Education.</h4>
                     <div className="text-caption">
@@ -139,7 +165,7 @@ class About extends Component {
                     </div>
                   </div>
                 </Col>
-                <Col xs="12" sm="6" md="4">
+                <Col xs={{ size: 10, offset: 1 }} sm={{ size: 8, offset: 2 }} md="4">
                   <div className="text-item">
                     <h4>Equipment.</h4>
                     <div className="text-caption">

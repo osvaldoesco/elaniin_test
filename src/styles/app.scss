@@ -53,6 +53,7 @@ body {
 	margin-top: 40px;
 }
 
+.d-none-on-md
 
 .no-margin{
 	margin-left: 0px !important;
@@ -163,6 +164,9 @@ body {
 		letter-spacing: 2.88px;
 		width: 600px;
 		margin: 0 auto;
+		@media screen and (max-width: 767px){
+			width: 100%;
+		}
 	}
 }
 
@@ -207,6 +211,9 @@ body {
 	.photo{
 		position: relative;
 		z-index: 1;
+		@media screen and (max-width: 767px){
+			width: 100%;
+		}
 	}
 	.photo-decoration{
 		position: absolute;
@@ -223,6 +230,9 @@ body {
 .about-photos-container__caption{
 	padding-left: 50px;
 	padding-top: 20px;
+	@media screen and (max-width: 767px){
+		padding-left: 0px;
+	}
 	.date{
 		font-family: $poppins;
 		font-size: 14px;
@@ -235,15 +245,28 @@ body {
 		font-size: 46px;
 		font-weight: 400;
 		line-height: 68px;
+		@media screen and (max-width: 767px){
+			font-size: 40px;
+		}
 	}
 	.description-decoration{
 		display: flex;
 		margin-top: 20px;
+		@media screen and (max-width: 767px){
+			display: block;
+		}
 		p{
 			width: calc(100% - 80px);
 			padding-left: 30px;
 			padding-right: 30px;
 			line-height: 1.9;
+			@media screen and (max-width: 767px){
+				padding-right: 0px;
+				padding-left: 0px;
+				width: 100%;
+				padding-bottom: 60px;
+				padding-top: 20px;
+			}
 		}
 	}
 	.decoration{
@@ -254,10 +277,15 @@ body {
 		margin-left: -55px;
 	}
 }
+
 /* text content */
 
 .about-text-container{
-	padding: 40px 0px;;
+	padding: 40px 0px;
+	@media screen and (max-width: 767px){
+		padding-top: 0px !important;
+		margin-top: -100px;
+	}
 	.text-item{
 		h4{
 			font-family: 'Merriweather';
@@ -306,6 +334,9 @@ body {
 	img{
 		width: 100%;
 		opacity: 0.6;
+		@media screen and (max-width: 767px){
+			min-height: 300px;
+		}
 	}
 	.video-play{
 		position: absolute;
@@ -321,12 +352,20 @@ body {
 		line-height: 100px;
 		font-family: $poppins;
 		font-size: 14px;
+		@media screen and (max-width: 767px){
+			left: 42%;
+			top: 42%;
+			width: 70px;
+			height: 70px;
+			border-radius: 70px;
+			line-height: 70px;
+		}
 	}
 }
 
 /* video */
 .about-newsletter{
-	padding:  60px 0px  160px;
+	padding:  60px 0px  120px;
 }
 
 .newsletter__title{
@@ -341,8 +380,15 @@ body {
 	width: 400px;
 	margin: 0 auto;
 	margin-top: 40px;
+	@media screen and (max-width: 767px){
+		padding: 0px 15px;
+		width: 100%;
+	}
 	.form-group{
 		width: calc(100% - 80px);
+		@media screen and (max-width: 767px){
+			margin-bottom: 0px;
+		}
 	}
 	input[type="email"]{
 		background-color: #111111;
