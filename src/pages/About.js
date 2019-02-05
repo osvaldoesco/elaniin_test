@@ -153,7 +153,7 @@ class About extends Component {
             </Container>
           </div>
           <div className="about-video">
-            <img alt="about-video" src="overlay.jpg" />
+            <img alt="about-video" src="overlay.jpg" className/>
             <div className="video-play">
               Play
             </div>

@@ -172,6 +172,30 @@ body {
 	}
 }
 
+
+
+/* video */
+.about-video{
+	padding: 40px 0px;
+	vertical-align: middle;
+	position: relative;
+	.video-play{
+		position: absolute;
+		top: 45%;
+		border-radius: 100px;
+    color: white;
+    height: 100px;
+    font-weight: bold;
+    width: 100px;
+		background-color: black;
+		text-align: center;
+		left: 45%;
+		line-height: 100px;
+		font-family: $poppins;
+		font-size: 14px;
+	}
+}
+
 /* END Style for about page */
 
 
