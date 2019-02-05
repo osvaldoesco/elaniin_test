@@ -10,13 +10,112 @@ body {
 	background-color: #111111;
 }
 
-.home-container{
-	width: 100%;
-	height: 300px;
-	background-color: green;
+@media screen and (max-width: 767px){
+	.navbar-nav{
+		padding: 20px 0px;
+		border-bottom: 1px solid #fff;
+	}
+	.nav-item{
+		padding: 15px 0px;
+	}
 }
 
-/* Style for about page */
+.navbar-toggler{
+	background-color: #7f8c8d !important;
+}
+
+
+/* Style for HOME page */
+.logotype-box{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+.home__logotype-container{
+	padding: 40px 0px;
+}
+
+.poppins{
+	font-family: Poppins;
+}
+
+.padding-40{
+	padding: 40px 0px;
+}
+
+.no-padding{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+.no-margin{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
+.pricing__img{
+	padding: 0px !important;
+	position: relative;
+	img{
+		opacity: 0.5;
+		width: 100%;
+	}
+	&--even{
+		@extend .pricing__img;
+		img{
+			opacity: 0.3;
+		}
+	}
+}
+
+.pricing__info{
+	position: absolute;
+	top: 0px;
+	padding: 40px;
+	width: 100%;
+	h4{
+		font-family: $merri;
+	}
+	.title-decoration{
+		width: 160px;
+		height: 20px;
+		background-color: #5328fe;
+		margin-top: -20px;
+	}
+	p{
+		margin-top: 40px;
+		font-family: $poppins;
+		font-size: 13px;
+		font-weight: 300;
+		letter-spacing: 0.96px;
+		line-height: 1.6;
+		span{
+			display: block;
+			color: #929292;
+		}
+	}
+	.price{
+		font-size: 35px;
+		font-family: $merri;
+	}
+	.explore{
+		width: 100%;
+		font-size: 13px;
+		font-family: $poppins;
+		text-transform: uppercase;
+		font-weight: 500;
+		line-height: 4.5;
+		text-align: right;
+	}
+}
+
+/* END Style for HOME page */
+
+
+
+/* Style for ABOUT page */
 
 .about-container{
 	width: 100%;
@@ -69,7 +168,7 @@ body {
 	.number{
 		position: absolute;
 		font-family: 'Poppins', sans-serif;
-		font-size: 90px;
+		font-size: 85px;
 		font-weight: bold;
 		margin-top: -60px;
 		margin-left: -40px;
@@ -108,7 +207,7 @@ body {
 	}
 	.photo_title{
 		font-family: $merri;
-		font-size: 48px;
+		font-size: 46px;
 		font-weight: 400;
 		line-height: 68px;
 	}
@@ -176,9 +275,13 @@ body {
 
 /* video */
 .about-video{
-	padding: 40px 0px;
+	padding: 60px 0px;
 	vertical-align: middle;
 	position: relative;
+	img{
+		width: 100%;
+		opacity: 0.6;
+	}
 	.video-play{
 		position: absolute;
 		top: 45%;
@@ -196,14 +299,112 @@ body {
 	}
 }
 
+/* video */
+.about-newsletter{
+	padding:  60px 0px  160px;
+}
+
+.newsletter__title{
+	font-family: $merri;
+	font-size: 40px;
+	font-weight: 400;
+	text-align: center;
+	padding: 20px 0px;
+}
+
+.newsletter__form{
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 40px;
+	.form-group{
+		width: calc(100% - 80px);
+	}
+	input[type="email"]{
+		background-color: #111111;
+		border: 1px solid #fff;
+		border-radius: 0px;
+		width: 100%;
+		height: 70px;
+		color: #fff;
+	}
+	button{
+		background-color: #111111;
+		width: 80px;
+		border: 1px solid #fff;
+		border-radius: 0px;
+		height: 70px;
+	}
+}
+
 /* END Style for about page */
 
-
+/* style for CONTACT  */
 .contact-container{
-	width: 100%;
-	height: 300px;
-	background-color: blue;
+	padding: 40px 0px;
 }
+
+.contact-header__title{
+	font-family: $merri;
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 68px;
+	padding: 20px 0px;
+	&:after{
+		content: "";
+		width: 100px;
+		height: 1px;
+		background-color: white;
+		position: absolute;
+		bottom: -5px;
+		left: -40px;
+		@media screen and (max-width: 767px){
+			left: 15px;
+		}
+	}
+}
+
+.contact-description{
+	margin-top: 40px;
+	font-family: $poppins;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 32px;
+}
+
+.leave-a-message{
+	margin-top: 100px;
+}
+
+.title-with-blue{
+	position: relative;
+	&:before{
+		content: "";
+		position: absolute;
+		margin-left: -10px;
+		margin-top: -10px;
+		width: 100px;
+		height: 25px;
+		background-color: #5328fe;
+		z-index: 0;
+	}
+	span{
+		position: relative;
+		z-index: 1;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: $merri;
+	}
+}
+
+.contact-map{
+	width: 100%;
+	@media screen and (max-width: 767px){
+		margin-top: 100px;
+	}
+}
+
+/* END of style for CONTACT  */
+
 .error404-container{
 	width: 100%;
 	height: 300px;

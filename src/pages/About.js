@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+
 import Layout from '../components/Layout';
 
 class About extends Component {
@@ -39,7 +40,7 @@ class About extends Component {
                 <Col md="7">
                   <div className="about-photos-container__caption">
                     <label className="date">2015 year</label>
-                    <h3 className="photo_title">Beginning of a photographer's career.</h3>
+                    <h3 className="photo_title">Beginning of a <br /> photographer's career.</h3>
                     <div className="description-decoration">
                       <div className="decoration"> </div>
                       <p>
@@ -95,7 +96,7 @@ class About extends Component {
                 <Col md="7">
                   <div className="about-photos-container__caption">
                     <label className="date">2017 year</label>
-                    <h3 className="photo_title">Cooperation with world brands.</h3>
+                    <h3 className="photo_title">Cooperation with <br /> world brands.</h3>
                     <div className="description-decoration">
                       <div className="decoration"> </div>
                       <p>
@@ -156,6 +157,24 @@ class About extends Component {
             <img alt="about-video" src="overlay.jpg" className/>
             <div className="video-play">
               Play
+              </div>
+          </div>
+          <div className="about-newsletter">
+            <h2 className="newsletter__title">
+              Sign up for our newsletter <br />
+              to receive special offers. <br />
+            </h2>
+            <div className="vertical-line">
+            </div>
+            <div className="newsletter__input-container">
+              <Form inline className="newsletter__form">
+                <FormGroup>
+                  <Label for="Email" hidden>Email</Label>
+                  <Input type="email" name="email" id="Email" placeholder="Enter your email address" />
+                </FormGroup>
+                {' '}
+                <Button>OK</Button>
+              </Form>
             </div>
           </div>
         </div>
