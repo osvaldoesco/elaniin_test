@@ -13,7 +13,7 @@ class Footer extends Component {
 						<h3>Office</h3>
 						<ul>
 							<li> 756 Livingston Street, <br/>
-								Brooklyn, NY 11201 
+								Brooklyn, NY 11201
 							</li>
 						</ul>
 					</div>
@@ -21,20 +21,20 @@ class Footer extends Component {
 						<h3>Get in touch</h3>
 						<ul>
 							<li>work@e.oliver.com</li>
-							<li>+1 (00) 123-45-67m</li>
+							<li>+1 (00) 123-45-67</li>
 						</ul>
 					</div>
 					<div>
 						<h3>Social</h3>
 						<ul>
 							<li>Connect with me on facebook, <br />
-								twitter or instagrem
+								twitter or instagram
 							</li>
 						</ul>
 					</div>
 				</Container>
 			</footer>
-			
+
 		);
 	}
 }

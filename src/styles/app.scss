@@ -49,6 +49,10 @@ body {
 	padding-right: 0px;
 }
 
+.margin-top-40{
+	margin-top: 40px;
+}
+
 
 .no-margin{
 	margin-left: 0px !important;
@@ -83,6 +87,10 @@ body {
 		height: 20px;
 		background-color: #5328fe;
 		margin-top: -20px;
+		&--short{
+			@extend .title-decoration;
+			width: 85px;
+		}
 	}
 	p{
 		margin-top: 40px;
@@ -97,8 +105,15 @@ body {
 		}
 	}
 	.price{
-		font-size: 35px;
+		font-size: 27px;
 		font-family: $merri;
+		line-height: 2;
+		&--small{
+			@extend .price;
+			font-size: 22px;
+			line-height: 2.5;
+
+		}
 	}
 	.explore{
 		width: 100%;
@@ -108,6 +123,16 @@ body {
 		font-weight: 500;
 		line-height: 4.5;
 		text-align: right;
+		position: relative;
+		&:before{
+			content: "";
+			width: calc(100% - 60px);
+			height: 1px;
+			background-color: white;
+			position: absolute;
+			left: 0px;
+			top: 28px;
+		}
 	}
 }
 
