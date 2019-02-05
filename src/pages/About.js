@@ -80,7 +80,7 @@ class About extends Component {
                 </div>
                 </Col>
               </Row>
-              <Row className="single-history d-none d-md-block">
+              <Row className="single-history d-none d-md-flex">
                 <Col md="7">
                   <div className="about-photos-container__caption">
                     <label className="date">2016 year</label>
@@ -142,7 +142,7 @@ class About extends Component {
           <div className="about-text-container">
             <Container>
               <Row>
-                <Col xs={{ size: 10, offset: 1 }} sm={{ size: 8, offset: 2 }}  md="4">
+                <Col xs={{ size: 10, offset: 1 }} sm={{ size: 8, offset: 2 }}  md={{ size: 4, offset: 0}} >
                   <div className="text-item">
                     <h4>Experience.</h4>
                     <div className="text-caption">
@@ -154,7 +154,7 @@ class About extends Component {
 
                   </div>
                 </Col>
-                <Col xs={{ size: 10, offset: 1 }} sm={{ size: 8, offset: 2 }} md="4">
+                <Col xs={{ size: 10, offset: 1 }} sm={{ size: 8, offset: 2 }} md={{ size: 4, offset: 0}}>
                   <div className="text-item">
                     <h4>Education.</h4>
                     <div className="text-caption">
@@ -165,7 +165,7 @@ class About extends Component {
                     </div>
                   </div>
                 </Col>
-                <Col xs={{ size: 10, offset: 1 }} sm={{ size: 8, offset: 2 }} md="4">
+                <Col xs={{ size: 10, offset: 1 }} sm={{ size: 8, offset: 2 }} md={{ size: 4, offset: 0}}>
                   <div className="text-item">
                     <h4>Equipment.</h4>
                     <div className="text-caption">
