@@ -46,6 +46,44 @@ body {
 	}
 
 }
+.intro-title{
+	font-family: $poppins;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+	letter-spacing: 5.32px;
+}
+
+.social-net{
+	top: 40%;
+	left: 25px;
+	position: absolute;
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+	color: #fefefe;
+	font-family: $merri;
+	font-size: 12px;
+	letter-spacing: 1.44px;
+	@media screen and (max-width: 767px){
+		display: none;
+	}
+}
+
+.net--explore{
+	top: 45%;
+	right: -80px;
+	position: absolute;
+	width: 300px;
+	font-size: 12px;
+	transform:rotate(-90deg);
+	@media screen and (max-width: 767px){
+		display: none;
+	}
+}
 
 .home__hello-container {
 	.vertical-line{
@@ -175,6 +213,101 @@ body {
 	img{
 		opacity: 0.8;
 	}
+}
+
+.explore-gallery{
+	text-align: right;
+	padding-right: 20px;
+	font-family: $poppins;
+	text-transform: uppercase;
+	label:before{
+		content: "";
+		width: 60px;
+		height: 1px;
+		position: absolute;
+		background-color: white;
+		margin-top: 12px;
+		margin-left: -70px;
+	}
+}
+
+
+.slide, .selected{
+	background-color: #111111 !important;
+}
+.control-dots{
+	display: none !important;
+}
+.slider-item-container{
+	width: auto !important;
+	img{
+		width: auto !important;
+	}
+}
+.slider-item{
+	position: relative;
+	display: inline-block;
+	padding: 80px 100px 20px;
+	background-color: #1a1a1a;
+	.slide-number{
+		color: #ffffff;
+		font-family: $poppins;
+		font-size: 50px;
+		font-weight: bolder;
+		position: absolute;
+		left: 0px;
+		top: 5px;
+		div{
+			height: 20px;
+			width: 100px;
+			background-color: #5328fe;
+			margin-top: -40px;
+			@media screen and (min-width: 768px){
+				margin-left: -45px;
+			}
+		}
+	}
+	.slide-name{
+		padding-top:20px;
+	}
+	.person-name{
+		font-family: $poppins;
+		font-size: 16px;
+		margin-bottom: 0px;
+		span{
+			font-weight: bold;
+		}
+	}
+	.company{
+		color: #848484;
+		font-family: $poppins;
+		font-size: 13px;
+		margin-top: 10px;
+	}
+	.description-slide{
+		position: absolute;
+		top: 30%;
+		right: -350px;
+		width: 400px;
+		text-align: left;
+		font-size: 14px;
+		@media screen and (max-width: 767px){
+			display: none;
+		}
+		&:before{
+			content: "";
+			width: 120px;
+			height: 1px;
+			position: absolute;
+			background-color: white;
+			margin-top: - 10px;
+			margin-left: -70px;
+		}
+	}
+}
+
+.thumbs{
+	display: none !important;
 }
 
 .logotype-box{

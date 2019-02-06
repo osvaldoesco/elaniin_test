@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 import Layout from '../components/Layout';
+import Slider from '../components/Slider';
 
 class Home extends Component {
   constructor(props){
@@ -22,6 +23,7 @@ class Home extends Component {
               <Container>
                 <Row>
                   <Col xs="12">
+                    <label className="intro-title">introduction</label>
                     <h2 className="contact-header__title">
                       Photography is <br />
                       a journey.
@@ -48,6 +50,14 @@ class Home extends Component {
                   </Col>
                 </Row>
               </Container>
+            </div>
+            <div className="social-net">
+              <label> Facebook </label>
+              <label> Instagram </label>
+              <label> Twitter </label>
+            </div>
+            <div className="net--explore explore-gallery">
+              <label>explore more</label>
             </div>
           </div>
 
@@ -163,11 +173,16 @@ class Home extends Component {
 
               </Row>
             </div>
+            <div className="explore-gallery">
+              <label> Explore Gallery </label>
+            </div>
           </div>
 
+          <div className="home__testimonials-container padding-100">
+            <Slider />
+          </div>
 
-
-          <div className="home__pricing-container padding-100">
+          <div className="home__pricing-container padding-40">
             <Container>
               <Row>
                 <Col xs="12">
