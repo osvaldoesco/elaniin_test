@@ -15,6 +15,75 @@ class Home extends Component {
     return (
       <Layout page={this.state.page}>
         <div className="home-container">
+
+
+          <div className="home__intro-container">
+            <div className0="contact-header">
+              <Container>
+                <Row>
+                  <Col xs="12">
+                    <h2 className="contact-header__title">
+                      Photography is <br />
+                      a journey.
+                    </h2>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col xs="12" md="6">
+                    <div className="contact-description">
+                      <p>
+                        My advice to everyone is to create life, not to consume
+                        it. I'm curious to see how many emotions now appear in
+                        things created with the help of complex technologies.
+                        They are so loaded with different feelings that it is no
+                        longer possible to separate emotions and work from the
+                        instrument on which it is done.
+                      </p>
+                      <div className="leave-a-message">
+                        <label className="title-with-blue">
+                          <span>Discover</span>
+                        </label>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </Container>
+            </div>
+          </div>
+
+
+          <div className="home__hello-container padding-100">
+            <Container>
+              <Row>
+                <Col sm={{size: 10, offset: 1}} md={{size: 8, offset: 2}} lg={{size: 6, offset: 3}}>
+
+                  <div className="hello__img-container">
+                    <div className="hello__img">
+                      <img alt="decoration triangle" src="decoration-triangle.jpg" className="de-triangle" />
+                      <img alt="hello" src="image-home.png" className="photo-center"/>
+                      <img alt="decoration square" src="photo_decoration.png" className="de-square" />
+                    </div>
+                  </div>
+                  <div className="vertical-line">
+                  </div>
+                  <div className="hello__description">
+                    <h2> Hello. </h2>
+                    <div className="title-decoration"></div>
+                    <p>
+                      All that we do is work on the style of life, on "being." The object
+                      as such is not very interesting. I wonder how people will live with
+                      him, what metamorphoses he will undergo in the house.
+                      I always liked very simple things. In all. Doing simple things is
+                      the most difficult thing.
+                      If we talk about simplicity, then it is a synthesis.
+                      <span> – Edward Oliver </span>
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </div>
+
           <div className="home__pricing-container">
             <Container>
               <Row>

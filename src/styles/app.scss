@@ -26,6 +26,94 @@ body {
 
 
 /* Style for HOME page */
+.home__intro-container {
+	padding: 150px 0px;
+	background-image: url("../assets/bg_home.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+	@media screen and (max-width: 767px){
+		padding: 70px 0px;
+	}
+	.title-with-blue{
+		@media screen and (max-width: 767px){
+			margin-left: 30px,
+		}
+		&:before{
+			left: -18px;
+			width: 70px;
+		}
+	}
+
+}
+
+.home__hello-container {
+	.vertical-line{
+		position: relative;
+		z-index: 2;
+		margin-top: -80px;
+		margin-bottom: 20px;
+	}
+}
+.hello__img-container{
+	text-align: center;
+}
+
+.hello__img{
+	text-align: center;
+	position: relative;
+
+	display: inline-block;
+	margin: 0	auto;
+	.photo-center{
+		box-shadow: 1px 1px 20px #000;
+		position: relative;
+		z-index: 1
+	}
+	.de-triangle{
+		position: absolute;
+		left: -85px;
+		top: 20px;
+		z-index: 0;
+	}
+	.de-square{
+		position: absolute;
+		right: -125px;
+		bottom: 50px;
+		z-index: 0;
+	}
+}
+
+.hello__description{
+	text-align: center;
+	h2{
+		font-family: $merri;
+		font-size: 48px;
+		text-align: center;
+	}
+	.title-decoration{
+		height: 20px;
+		background-color: #5328fe;
+		margin: 0 auto;
+		margin-top: -30px;
+		width: 145px;
+	}
+	p{
+		text-align: center;
+		font-family: $merri;
+		margin-top: 50px;
+		font-style: italic;
+		font-size: 15px;
+		line-height: 1.8;
+		span{
+			display: block;
+			margin-top: 20px;
+			font-family: $poppins;
+		}
+	}
+}
+
+
 .logotype-box{
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -42,6 +130,9 @@ body {
 
 .padding-40{
 	padding: 40px 0px;
+}
+.padding-100{
+	padding: 100px 0px;
 }
 
 .no-padding{
