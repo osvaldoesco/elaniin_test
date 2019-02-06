@@ -55,7 +55,7 @@ class Home extends Component {
           <div className="home__hello-container padding-100">
             <Container>
               <Row>
-                <Col sm={{size: 10, offset: 1}} md={{size: 8, offset: 2}} lg={{size: 6, offset: 3}}>
+                <Col sm={{size: 8, offset: 2}} md={{size: 8, offset: 2}} lg={{size: 6, offset: 3}}>
 
                   <div className="hello__img-container">
                     <div className="hello__img">
@@ -84,7 +84,90 @@ class Home extends Component {
             </Container>
           </div>
 
-          <div className="home__pricing-container">
+          <div className="home__works-container padding-40">
+            <div className0="contact-header">
+              <Container>
+                <Row>
+                  <Col xs="12">
+                    <h2 className="contact-header__title">
+                      My Works.
+                    </h2>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col xs="12" md="6">
+                    <div className="contact-description">
+                      <p>
+                        A photo — is a search for what can get
+                        into the frame. When you limit events to
+                        a frame — You change these events
+                      </p>
+                    </div>
+                  </Col>
+                </Row>
+              </Container>
+            </div>
+
+            <div className="home__work-boxes padding-40">
+              <Row className="no-margin">
+                <Col xs="6" sm="6" md="3" className="work-box">
+                  <div className="box1 sigle-work-box">
+                    <img alt="work1" src="box_small.jpg" />
+                    <div className="pricing__info">
+                      <p>
+                        photos
+                        <span>Canon</span>
+                        MODEL
+                        <span>Canon EOS 5D Mark II</span>
+                        SHUTTER SPEED
+                        <span>1/4000s</span>
+                        APERTURE
+                        <span>ƒ/4.5</span>
+                        FOCAL LENGTH
+                        <span>230mm</span>
+                        ISO
+                        <span>250</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="box2 sigle-work-box">
+                    <img alt="work2" src="box_small.jpg" />
+                  </div>
+                </Col>
+                <Col xs="6" sm="6" md="3" className="work-box">
+                  <div className="box3 sigle-work-box">
+                    <img alt="work3" src="box_tall.jpg" />
+                  </div>
+                </Col>
+                <Col xs="12" sm="6" md="6" className="work-box">
+                  <Row className="no-margin">
+                    <Col xs="12" sm="12" md="12" className="work-box">
+                      <div className="box4 sigle-work-box">
+                        <img alt="work4" src="box_large.jpg" />
+
+                      </div>
+                    </Col>
+                    <Col xs="6" sm="6" md="6" className="work-box">
+                      <div className="box5 sigle-work-box">
+                        <img alt="work2" src="box_small.jpg" />
+                      </div>
+                    </Col>
+                    <Col xs="6" sm="6" md="6" className="work-box">
+                      <div className="box6 sigle-work-box">
+                        <img alt="work2" src="box_small.jpg" />
+                      </div>
+                    </Col>
+                  </Row>
+                </Col>
+
+              </Row>
+            </div>
+          </div>
+
+
+
+          <div className="home__pricing-container padding-100">
             <Container>
               <Row>
                 <Col xs="12">

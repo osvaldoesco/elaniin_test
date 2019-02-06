@@ -123,6 +123,54 @@ body {
 }
 
 
+.home__work-boxes{
+	img{
+		width: 100%;
+	}
+}
+
+.work-box{
+	padding: 0px !important;
+}
+
+.sigle-work-box{
+	.pricing__info{
+		opacity: 0;
+		padding-top: 0px;
+	}
+	&:hover{
+		img{
+			opacity: 0.2,
+		}
+		.pricing__info{
+			opacity: 1;
+		}
+	}
+}
+
+.box1{
+	opacity: 1;
+}
+.box2{
+	img{
+		opacity: 0.8;
+	}
+}
+.box3{
+	opacity: 1;
+}
+.box4{
+	opacity: 1;
+}
+.box5{
+	opacity: 1;
+}
+.box6{
+	img{
+		opacity: 0.8;
+	}
+}
+
 .logotype-box{
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -152,8 +200,6 @@ body {
 .margin-top-40{
 	margin-top: 40px;
 }
-
-.d-none-on-md
 
 .no-margin{
 	margin-left: 0px !important;
